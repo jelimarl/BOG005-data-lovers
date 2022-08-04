@@ -55,32 +55,6 @@ le ayude a interactuar y entender mejor esos datos.
 
 Estos son datos que te proponemos:
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
-
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
-
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
-
-* [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
-  Este set nos proporciona la lista de los atletas que ganaron medallas en las
-  olímpiadas de Río de Janeiro.
-  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](src/data/athletes/README.md)
-
-* [Studio Ghibli](src/data/ghibli/ghibli.json).
-  En este set encontrarás una lista de las animaciones y sus personajes del
-  [Studio Ghibli](https://ghiblicollection.com/).
-  - [Investigación con seguidores de las animaciones del Studio Ghibli](src/data/ghibli/README.md)
-
 * [Harry Potter](src/data/harrypotter/harry.json).
   En este set encontrarás una lista de los personajes,libros pociones
   y hechizos de toda la saga de
@@ -623,3 +597,49 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
+
+
+
+
+
+Proyecto 2
+DATA LOVERS HARRY POTTER
+
+Esta web está diseñada para personas de 8 años en adelante, apasionadas por la saga de Harry Potter a los que les encanta tener toda la información a un click de distancia.
+
+Para esto nos enfocaremos en dividir este proyecto en historias de usuario, a continuación describiremos la primera historia:
+
+Historia de Usuario 1: Función Visualizar
+
+Yo como: Apasionado por la saga de Harry Potter.
+
+Quiero: Poder visualizar los nombres de los hechizos que realizan.
+
+Para qué: Para poder conocer cada uno de ellos.
+
+  Criterios de aceptación:
+
+* El usuario puede dar click al botón Spells y le mostrará otra pantalla donde observará los nombres de los hechizos.
+
+  Criterios de terminado:
+
+* Estructurar la página web (header, main, footer).
+* Botón SPELLS.
+* Nombre de cada hechizo.
+* Responsive (móvil).
+* Diseñar, implementar y aprobar las pruebas unitarias (para esta historia).
+* Subirlo a github.
+
+Prototipo de baja fidelidad
+
+![Primer prototipo Harry Potter](./src/img/PrototipoFiltrar.jpg)
+
+FEEDBACK
+
+Luego de recibir el feedback, realizamos los ajustes al prototipo de baja fidelidad, donde colocamos los botones para acceder a los hechizos en la primera vista, en la segunda vista los hechizos a elegir :
+
+![Prototipo de baja fidelidad 1](./src/img/PrototipoFiltrar1.jpg)
+
+Prototipo de Alta fidelidad
+
+[Prototipo de alta fidelidad. Historia de usuario 1](https://www.figma.com/proto/rSdsLbnfZClPUnKm4XuVmR/Untitled?node-id=1%3A3&scaling=scale-down&page-id=0%3A1)
