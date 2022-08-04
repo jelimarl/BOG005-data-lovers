@@ -1,0 +1,91 @@
+/* Estilando el header*/
+
+header {
+    background-color: #1b1717;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+body {
+    background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#firstPage {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+
+.charactersPic {
+    padding-top: 10%;
+    width: 40%;
+    height: 40%;
+}
+
+h2 {
+    color: #eeebdd;
+}
+
+
+#spellsButton {
+    color: #630000;
+    font: bold;
+    font-size: 20px;
+    border: #630000;
+    width: 110px;
+    height: 40px;
+    background-color: #eeebdd;
+    margin-bottom: 10%;
+    border-radius: 20px;
+}
+
+/* Estilando el footer */
+
+.footerPage {
+    background-color: #1b1717;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+footer h3 {
+    color: beige;
+    text-align: center;
+    margin-top: 2%;
+    text-decoration: underline;
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0%;
+}
+
+footer ul li {
+    color: beige;
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+i {
+    color: beige;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-right: -20%;
+}
