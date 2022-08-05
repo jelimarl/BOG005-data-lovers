@@ -1,29 +1,81 @@
+
 /* Estilando el header*/
+
+body{
+    margin: 0;
+    height: 100vh;
+}
 
 header {
     background-color: #1b1717;
     width: 100%;
     margin-top: -10px;
+
 }
+
 
 .logo {
     width: 200px;
 }
 
-body {
+
+body #firstPage {
     background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-left: 0px;
     margin-right: 0px;
+    overflow: scroll;
+    overflow: hidden;
 }
 
 #firstPage {
     display: flex;
     justify-items: center;
     flex-direction: column;
+    display: block;
 }
+
+#firstPage h2 {
+    color:#eeebdd;
+}
+
+body #secondPage {
+    display: none;
+    background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#spellsContainer{
+    height: 500px;
+    overflow: scroll;
+    
+
+}
+
+#secondPage h2{
+    color: #eeebdd;
+    margin-top: 0;
+    padding-top: 2%;
+    text-align: center;
+}
+
+
+#thirdPage {
+    display: none;
+}
+
+#thirdPage h2{
+    color: #630000;
+}
+
 
 
 .charactersPic {
@@ -32,9 +84,7 @@ body {
     height: 40%;
 }
 
-h2 {
-    color: #eeebdd;
-}
+
 
 
 #spellsButton {
@@ -49,11 +99,34 @@ h2 {
     border-radius: 20px;
 }
 
+#spellsContainer p {
+    color: #eeebdd;
+    margin-left: 10%;
+}
+
+#filterButton{
+    color: #630000;
+    font: bold;
+    font-size: 20px;
+    border: #630000;
+    width: 110px;
+    height: 40px;
+    background-color: #eeebdd;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+
+
+
+
+
 /* Estilando el footer */
 
-.footerPage {
+footer {
     background-color: #1b1717;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
 }
 
@@ -62,8 +135,9 @@ h2 {
 footer h3 {
     color: beige;
     text-align: center;
-    margin-top: 2%;
+    margin: 0;
     text-decoration: underline;
+    padding-top: 1%;
 }
 
 .media {
@@ -81,6 +155,10 @@ footer ul li {
     margin-top: 5px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+ul {
+    margin: 0;
 }
 
 i {
