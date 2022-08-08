@@ -1,93 +1,102 @@
-/* Estilando el header*/
 
-body {
-    margin: 0;
-    height: 100vh;
-}
+/*Responsive Desktop*/
 
-header {
-    background-color: #1b1717;
-    width: 100%;
-    margin-top: -10px;
-}
+/*@media (min-width: 1025px) and (max-width: 1280px) {*/
+    /* Estilando el header*/
+    body {
+        margin: 0;
+        height: 100vh;
+    }
 
-.logo {
-    width: 200px;
-}
+    header {
+        background-color:#1b1717;
+        width: 100%;
+        margin-top: -10px;
+        position: fixed;
+        
+    }
 
-body #firstPage {
-    background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: 0px;
-    margin-right: 0px;
-    overflow: scroll;
-    overflow: hidden;
-}
 
-#firstPage {
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
-    display: block;
-}
+    .logo {
+        width: 400px;
+        position: relative;
+    
 
-#firstPage h2 {
-    color: #eeebdd;
-}
+    }
 
-body #secondPage {
-    display: none;
-    background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 100%;
-}
 
-#spellsContainer {
-    display: block;
-    height: 500px;
-    overflow: scroll;
-    overflow-x: hidden;
-    color: #eeebdd;
-    margin-left: 10%;
-}
+    body #firstPage {
+        background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+    
+    }
 
-#secondPage h2 {
-    color: #eeebdd;
-    margin-top: 0;
-    padding-top: 2%;
-    text-align: center;
-}
+    #firstPage {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        display: block;
+    }
 
-.charactersPic {
-    padding-top: 10%;
-    width: 40%;
-    height: 40%;
-}
+    #firstPage h2 {
+        color: #eeebdd;
+        font-size: 50px;
+    }
 
-#spellsButton {
-    color: #630000;
-    font: bold;
-    font-size: 20px;
-    border: #630000;
-    width: 110px;
-    height: 40px;
-    background-color: #eeebdd;
-    margin-bottom: 10%;
-    border-radius: 20px;
-}
+    body #secondPage {
+        display: none;
+        background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 100%;
+       
+    }
 
-#spellsContainer p {
-    color: #eeebdd;
-    margin-left: 10%;
-}
+    #spellsContainer {
+        height: 500px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
 
-#filterSelect {
+    .charactersPic {
+        padding-top: 25%;
+        width: 40%;
+        height: 40%;
+    }
+
+
+    #spellsButton {
+        color: #630000;
+        font: bold;
+        font-size: 20px;
+        border: #630000;
+        width: 110px;
+        height: 40px;
+        background-color: #eeebdd;
+        margin-bottom: 10%;
+        border-radius: 20px;
+    }
+
+    #secondPage h2 {
+        color: #eeebdd;
+        margin-top: 0;
+        padding-top: 2%;
+        text-align: center;
+    }
+
+    #spellsContainer p {
+        color: #eeebdd;
+        margin-left: 10%;
+    }
+   
+    #filterSelect {
     color: #630000;
     font: bold;
     font-size: 15px;
@@ -115,46 +124,302 @@ body #secondPage {
     text-align: center;
 }
 
-/* Estilando el footer */
+    /* Estilando el footer */
 
-footer {
-    background-color: #1b1717;
-    /*position: absolute;*/
-    width: 100%;
+    footer {
+        background-color: #1b1717;
+        /*position: absolute;*/
+        width: 100%;
+    }
+
+    footer h3 {
+        color: beige;
+        text-align: center;
+        margin: 0;
+        text-decoration: underline;
+        padding-top: 1%;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+    footer ul li {
+        color: beige;
+        list-style: none;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    i {
+        color: beige;
+        font-size: 30px;
+        display: flex;
+        margin-top: 15%;
+        margin-right: -20%;
+    }
+
+
+
+
+/*Responsive mobile*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        background-color: #1b1717;
+        width: 100%;
+        margin-top: -10px;
+        position: fixed;
+    }
+
+    .logo {
+        width: 150px;
+        padding-top: 2%;
+    }
+
+    body #firstPage {
+        background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 767px;
+    }
+
+    .charactersPic {
+        padding-top: 40%;
+        width: 60%;
+        height: 60%;
+    }
+
+    #firstPage h2 {
+        color: #eeebdd;
+        font-size: 30px;
+        background-color: #712b75;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    #spellsButton {
+        color: #630000;
+        font: bold;
+        font-size: 20px;
+        border: #630000;
+        width: 110px;
+        height: 40px;
+        background-color: #eeebdd;
+        margin-bottom: 10%;
+        border-radius: 20px;
+    }
+
+    footer {
+        background-color: #1b1717;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+    }
+
+    footer h3 {
+        color: beige;
+        text-align: center;
+        margin: 0;
+        text-decoration: underline;
+        padding-top: 1%;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+    footer ul li {
+        color: beige;
+        list-style: none;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    i {
+        color: beige;
+        font-size: 30px;
+        display: flex;
+        margin-top: 15%;
+        margin-right: -20%;
+    }
+
 }
 
-footer h3 {
-    color: beige;
-    text-align: center;
-    margin: 0;
-    text-decoration: underline;
-    padding-top: 1%;
-}
+/*Responsive Tablet, ipad and "mini" laptop*/
 
-.media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0%;
-}
+@media (min-width: 768px) and (max-width: 1024px) {
 
-footer ul li {
-    color: beige;
-    list-style: none;
-    margin-bottom: 10px;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    body {
+        margin: 0;
+        height: 100vh;
+    }
 
-ul {
-    margin: 0;
-}
+    header {
+        background-color: rgb(63, 47, 47);
+        width: 100%;
+        margin-top: -10px;
+        position: fixed;
+    }
 
-i {
-    color: beige;
-    font-size: 30px;
-    margin-top: 5%;
-    margin-right: -20%;
+
+    .logo {
+        width: 250px;
+        margin-top: 1%;
+    }
+
+
+    body #firstPage {
+        background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow: scroll;
+        overflow: hidden;
+    }
+
+    #firstPage {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        display: block;
+    }
+
+    #firstPage h2 {
+        color: #eeebdd;
+        font-size: 50px;
+    }
+
+    body #secondPage {
+        display: none;
+        background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 100%;
+    }
+
+    #spellsContainer {
+        height: 500px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .charactersPic {
+        padding-top: 20%;
+        width: 40%;
+        height: 40%;
+    }
+
+
+    #spellsButton {
+        color: #630000;
+        font: bold;
+        font-size: 20px;
+        border: #630000;
+        width: 110px;
+        height: 40px;
+        background-color: #eeebdd;
+        margin-bottom: 10%;
+        border-radius: 20px;
+    }
+
+    #secondPage h2 {
+        color: #eeebdd;
+        margin-top: 0;
+        padding-top: 2%;
+        text-align: center;
+    }
+
+    #spellsContainer p {
+        color: #eeebdd;
+        margin-left: 10%;
+    }
+
+    /* Estilando el footer */
+
+    footer {
+        background-color:rgb(63, 47, 47);
+        /*position: absolute;*/
+        width: 100%;
+    }
+
+
+
+    footer h3 {
+        color: beige;
+        text-align: center;
+        margin: 0;
+        text-decoration: underline;
+        padding-top: 1%;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+    footer ul li {
+        color: beige;
+        list-style: none;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    i {
+        color: beige;
+        font-size: 30px;
+        display: flex;
+        margin-top: 15%;
+        margin-right: -20%;
+    }
+
+
+
+
 }
