@@ -627,7 +627,6 @@ Para qué: Para poder conocer cada uno de ellos.
 * Botón SPELLS.
 * Nombre de cada hechizo.
 * Responsive (móvil).
-* Diseñar, implementar y aprobar las pruebas unitarias (para esta historia).
 * Subirlo a github.
 
 Prototipo de baja fidelidad
@@ -643,3 +642,29 @@ Luego de recibir el feedback, realizamos los ajustes al prototipo de baja fideli
 Prototipo de Alta fidelidad
 
 [Prototipo de alta fidelidad. Historia de usuario 1](https://www.figma.com/proto/rSdsLbnfZClPUnKm4XuVmR/Untitled?node-id=1%3A3&scaling=scale-down&page-id=0%3A1)
+
+
+
+
+
+
+
+Historia de Usuario 2: Función Filtrar
+
+Yo como: Apasionado por la saga de Harry Potter.
+
+Quiero: Poder filtrar los hechizos por categoria.
+
+Para qué: Para conocerlos y estar preparados en caso de necesitarlos.
+
+  Criterios de aceptación:
+
+* El usuario dará click en las opciones de filtrado y podrá obtener los hechizos por categorias. 
+
+  Criterios de terminado:
+
+* Selector de filtrado.
+* Filtrado por categoria.
+* Responsive para todos los equipos.
+* Desarrollar, implementar y aprobar las pruebas unitarias.
+* Subirlo a github.
