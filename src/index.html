@@ -17,7 +17,9 @@
         <img src="./img/LogoHeader.png" class="logo">
       </center>
     </header>
+
     <main>
+
       <section id="firstPage">
         <center>
           <div>
@@ -32,37 +34,31 @@
         </center>
       </section>
 
-    <section id="secondPage">
-       <h2>SPELLS</h2>
+      <section id="secondPage">
+        <h2>SPELLS</h2>
 
-       <input type="button" value="Filtrar" id="filterButton">
+        <select name="filter" id="filterSelect">
+          <option value="">Filter by type</option>
+          <option value="Charm">Charm</option>
+          <option value="Curse">Curse</option>
+        </select>
 
-       <div id="spellsContainer">
+        <select name="sort" id="sortSelect">
+          <option value="">Sort by</option>
+          <option value="az">A - Z</option>
+          <option value="za">Z - A</option>
+        </select>
 
-       </div>
+        <div id="spellsContainer">
 
-
-
-
-    </section>
-
-    <section id="thirdPage">
-      <h2>Spells Charm</h2>
-
-      <div id="spellsContainerCharm">
-
-      </div>
-
-
-    </section>
+        </div>
+      </section>
 
     </main>
 
     <footer>
 
-      <h3>
-        Redes Sociales
-      </h3>
+      <h3>Social Media</h3>
 
       <ul class="media">
         <div>
@@ -80,7 +76,6 @@
           </li>
         </div>
       </ul>
-
 
     </footer>
 
