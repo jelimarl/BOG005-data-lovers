@@ -9,10 +9,28 @@ export const anotherExample = () => {
 };
 
 export const filterSpellsCharm = (obj) => {
-  
-  //var bookTitle = "Harry Potter and the Sorcerer's Stone";
-  if ('spell_type' in obj && obj.spell_type === "Charm" ) {
-    return true;
+
+  function filterByCharm(obj) {
+    if ('spell_type' in obj && obj.spell_type === "Charm") {
+      return true;
+    }
   }
+  return obj.filter(filterByCharm);
+};
+
+export const filterSpellsCurse = (obj) => {
+
+  function filterByCurse(obj) {
+    if ('spell_type' in obj && obj.spell_type === "Curse") {
+      return true;
+    }
+  }
+  return obj.filter(filterByCurse);
+};
+
+//hay que usar map y objkey porque es un json
+export const sortSpells = (obj) => {
+
+  return obj.sort().reverse();
 };
 
