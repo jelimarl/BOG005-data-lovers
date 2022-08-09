@@ -65,6 +65,73 @@ function showSpellsByType() {
             };
             break;
 
+        case (filterValue === "Conjuration"):
+            arrSpellsFiltered = filterSpells(spells, "Conjuration");
+
+            for (let spell of arrSpellsFiltered) {
+
+                printSpells += `<article>
+                <h3>${spell.name}</h3>
+                <p></p>
+                </article>`;
+                spellsContainer.innerHTML = printSpells;
+            };
+            break;
+
+        case (filterValue === "Transfiguration"):
+            arrSpellsFiltered = filterSpells(spells, "Transfiguration");
+
+            for (let spell of arrSpellsFiltered) {
+
+                printSpells += `<article>
+                <h3>${spell.name}</h3>
+                <p></p>
+                </article>`;
+                spellsContainer.innerHTML = printSpells;
+            };
+            break;
+
+        case (filterValue === "Hex"):
+            arrSpellsFiltered = filterSpells(spells, "Hex");
+
+            for (let spell of arrSpellsFiltered) {
+
+                printSpells += `<article>
+                <h3>${spell.name}</h3>
+                <p></p>
+                </article>`;
+                spellsContainer.innerHTML = printSpells;
+            };
+            break;
+
+        case (filterValue === "Jinx"):
+            arrSpellsFiltered = filterSpells(spells, "Jinx");
+
+            for (let spell of arrSpellsFiltered) {
+
+                printSpells += `<article>
+                <h3>${spell.name}</h3>
+                <p></p>
+                </article>`;
+                spellsContainer.innerHTML = printSpells;
+            };
+            break;
+
+        case (filterValue === "Transportation"):
+            arrSpellsFiltered = filterSpells(spells, "Transportation");
+
+            for (let spell of arrSpellsFiltered) {
+
+                printSpells += `<article>
+                <h3>${spell.name}</h3>
+                <p></p>
+                </article>`;
+                spellsContainer.innerHTML = printSpells;
+            };
+            break;
+
+
+
     }
 }
 
