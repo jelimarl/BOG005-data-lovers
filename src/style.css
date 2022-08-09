@@ -1,102 +1,95 @@
-
 /*Responsive Desktop*/
 
-/*@media (min-width: 1025px) and (max-width: 1280px) {*/
-    /* Estilando el header*/
-    body {
-        margin: 0;
-        height: 100vh;
-    }
+/* Estilando el header*/
+body {
+    margin: 0;
+    height: 100vh;
+}
 
-    header {
-        background-color:#1b1717;
-        width: 100%;
-        margin-top: -10px;
-        position: fixed;
-        
-    }
+header {
+    background-color: #1b1717;
+    width: 100%;
+    margin-top: -10px;
+    position: fixed;
+}
 
 
-    .logo {
-        width: 400px;
-        position: relative;
-    
-
-    }
+.logo {
+    width: 400px;
+    position: relative;
+}
 
 
-    body #firstPage {
-        background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin-left: 0px;
-        margin-right: 0px;
-    
-    }
+body #firstPage {
+    background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
-    #firstPage {
-        display: flex;
-        justify-items: center;
-        flex-direction: column;
-        display: block;
-    }
+#firstPage {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    display: block;
+}
 
-    #firstPage h2 {
-        color: #eeebdd;
-        font-size: 50px;
-    }
+#firstPage h2 {
+    color: #eeebdd;
+    font-size: 50px;
+    text-decoration: overline underline;
+}
 
-    body #secondPage {
-        display: none;
-        background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 100%;
-       
-    }
+body #secondPage {
+    display: none;
+    background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 100%;
 
-    #spellsContainer {
-        height: 500px;
-        overflow: scroll;
-        overflow-x: hidden;
-    }
+}
 
-    .charactersPic {
-        padding-top: 25%;
-        width: 40%;
-        height: 40%;
-    }
+#spellsContainer {
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #eeebdd;
+    margin-left: 10%;
+}
+
+.charactersPic {
+    padding-top: 25%;
+    width: 40%;
+    height: 40%;
+}
 
 
-    #spellsButton {
-        color: #630000;
-        font: bold;
-        font-size: 20px;
-        border: #630000;
-        width: 110px;
-        height: 40px;
-        background-color: #eeebdd;
-        margin-bottom: 10%;
-        border-radius: 20px;
-    }
+#spellsButton {
+    color: #630000;
+    font: bold;
+    font-size: 20px;
+    border: #630000;
+    width: 110px;
+    height: 40px;
+    background-color: #eeebdd;
+    margin-bottom: 10%;
+    border-radius: 20px;
+}
 
-    #secondPage h2 {
-        color: #eeebdd;
-        margin-top: 0;
-        padding-top: 2%;
-        text-align: center;
-    }
+#secondPage h2 {
+    color: #eeebdd;
+    margin-top: 0;
+    padding-top: 17%;
+    text-align: center;
+    font-size: 50px;
+}
 
-    #spellsContainer p {
-        color: #eeebdd;
-        margin-left: 10%;
-    }
-   
-    #filterSelect {
+#filterSelect {
     color: #630000;
     font: bold;
     font-size: 15px;
@@ -108,6 +101,7 @@
     border-radius: 20px;
     margin-left: 10%;
     text-align: center;
+
 }
 
 #sortSelect {
@@ -122,52 +116,53 @@
     border-radius: 20px;
     margin-left: 10%;
     text-align: center;
+
 }
 
-    /* Estilando el footer */
+/* Estilando el footer */
 
-    footer {
-        background-color: #1b1717;
-        /*position: absolute;*/
-        width: 100%;
-    }
+footer {
+    background-color: #1b1717;
+    /*position: absolute;*/
+    width: 100%;
+}
 
-    footer h3 {
-        color: beige;
-        text-align: center;
-        margin: 0;
-        text-decoration: underline;
-        padding-top: 1%;
-    }
+footer h3 {
+    color: beige;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+    padding-top: 1%;
+}
 
-    .media {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-left: 0%;
-    }
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0%;
+}
 
-    footer ul li {
-        color: beige;
-        list-style: none;
-        margin-bottom: 10px;
-        text-align: center;
-        margin-top: 5px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+footer ul li {
+    color: beige;
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-    ul {
-        margin: 0;
-    }
+ul {
+    margin: 0;
+}
 
-    i {
-        color: beige;
-        font-size: 30px;
-        display: flex;
-        margin-top: 15%;
-        margin-right: -20%;
-    }
+i {
+    color: beige;
+    font-size: 30px;
+    display: flex;
+    margin-top: 15%;
+    margin-right: -20%;
+}
 
 
 
@@ -212,13 +207,29 @@
     #firstPage h2 {
         color: #eeebdd;
         font-size: 30px;
-        background-color: #712b75;
+        /*background-color: #712b75;*/
         margin-left: 15%;
         margin-right: 15%;
         border-radius: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: overline underline;
     }
 
+    #secondPage h2 {
+        color: #eeebdd;
+        margin-top: 0;
+        padding-top: 25%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #spellsContainer {
+        height: 500px;
+        overflow: scroll;
+        overflow-x: hidden;
+        color: #eeebdd;
+        margin-left: 10%;
+    }
 
     #spellsButton {
         color: #630000;
@@ -231,6 +242,39 @@
         margin-bottom: 10%;
         border-radius: 20px;
     }
+
+    #filterSelect {
+        color: #630000;
+        font: bold;
+        font-size: 15px;
+        border: #630000;
+        width: 110px;
+        height: 30px;
+        background-color: #eeebdd;
+        margin-bottom: 2%;
+        margin-top: 3%;
+        border-radius: 20px;
+        margin-left: 10%;
+        text-align: center;
+
+    }
+
+    #sortSelect {
+        color: #630000;
+        font: bold;
+        font-size: 15px;
+        border: #630000;
+        width: 110px;
+        height: 30px;
+        background-color: #eeebdd;
+        margin-bottom: 2%;
+        border-radius: 20px;
+        margin-left: 10%;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+
 
     footer {
         background-color: #1b1717;
@@ -339,6 +383,8 @@
         height: 500px;
         overflow: scroll;
         overflow-x: hidden;
+        color: #eeebdd;
+        margin-left: 10%;
     }
 
     .charactersPic {
@@ -363,19 +409,16 @@
     #secondPage h2 {
         color: #eeebdd;
         margin-top: 0;
-        padding-top: 2%;
+        padding-top: 18%;
         text-align: center;
+        font-size: 30px;
     }
 
-    #spellsContainer p {
-        color: #eeebdd;
-        margin-left: 10%;
-    }
 
     /* Estilando el footer */
 
     footer {
-        background-color:rgb(63, 47, 47);
+        background-color: rgb(63, 47, 47);
         /*position: absolute;*/
         width: 100%;
     }
