@@ -1,8 +1,6 @@
 import { example } from './data.js';
 
-import { filterSpellsCharm } from './data.js';
-
-import { filterSpellsCurse } from './data.js';
+import { filterSpells } from './data.js';
 
 import { sortSpells } from './data.js';
 
@@ -26,7 +24,7 @@ function showSpells() {
         <h3>${spell.name}</h3>
         <p></p>
         </article>`;
-        spellsContainer.innerHTML = printSpells
+        spellsContainer.innerHTML = printSpells;
     }
 }
 
@@ -36,13 +34,13 @@ function showSpellsByType() {
 
     firstPage.style.display = "none";
     secondPage.style.display = "block";
-    let filterValue = filterSelect.value
+    let filterValue = filterSelect.value;
     let arrSpellsFiltered;
     let printSpells = "";
 
     switch (true) {
         case (filterValue === "Charm"):
-            arrSpellsFiltered = filterSpellsCharm(spells);
+            arrSpellsFiltered = filterSpells(spells, "Charm");
 
             for (let spell of arrSpellsFiltered) {
 
@@ -50,12 +48,12 @@ function showSpellsByType() {
                 <h3>${spell.name}</h3>
                 <p></p>
                 </article>`;
-                spellsContainer.innerHTML = printSpells
+                spellsContainer.innerHTML = printSpells;
             };
             break;
 
         case (filterValue === "Curse"):
-            arrSpellsFiltered = filterSpellsCurse(spells);
+            arrSpellsFiltered = filterSpells(spells, "Curse");
 
             for (let spell of arrSpellsFiltered) {
 
@@ -63,7 +61,7 @@ function showSpellsByType() {
                 <h3>${spell.name}</h3>
                 <p></p>
                 </article>`;
-                spellsContainer.innerHTML = printSpells
+                spellsContainer.innerHTML = printSpells;
             };
             break;
 
