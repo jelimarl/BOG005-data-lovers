@@ -94,7 +94,7 @@ body #secondPage {
     font: bold;
     font-size: 15px;
     border: #630000;
-    width: 110px;
+    width: 125px;
     height: 40px;
     background-color: #eeebdd;
     margin-bottom: 2%;
@@ -109,7 +109,7 @@ body #secondPage {
     font: bold;
     font-size: 15px;
     border: #630000;
-    width: 110px;
+    width: 125px;
     height: 40px;
     background-color: #eeebdd;
     margin-bottom: 2%;
@@ -228,7 +228,7 @@ i {
         overflow: scroll;
         overflow-x: hidden;
         color: #eeebdd;
-        margin-left: 10%;
+        margin-left: 7%;
     }
 
     #spellsButton {
@@ -248,7 +248,7 @@ i {
         font: bold;
         font-size: 15px;
         border: #630000;
-        width: 110px;
+        width: 121px;
         height: 30px;
         background-color: #eeebdd;
         margin-bottom: 2%;
@@ -264,7 +264,7 @@ i {
         font: bold;
         font-size: 15px;
         border: #630000;
-        width: 110px;
+        width: 121px;
         height: 30px;
         background-color: #eeebdd;
         margin-bottom: 2%;

@@ -626,7 +626,7 @@ Para qué: Para poder conocer cada uno de ellos.
 * Estructurar la página web (header, main, footer).
 * Botón SPELLS.
 * Nombre de cada hechizo.
-* Responsive (móvil).
+* Responsive.
 * Subirlo a github.
 
 Prototipo de baja fidelidad
@@ -646,10 +646,7 @@ Prototipo de Alta fidelidad
 
 
 
-
-
-
-Historia de Usuario 2: Función Filtrar
+Historia de Usuario 2: Función Filtrar 
 
 Yo como: Apasionado por la saga de Harry Potter.
 
@@ -665,6 +662,5 @@ Para qué: Para conocerlos y estar preparados en caso de necesitarlos.
 
 * Selector de filtrado.
 * Filtrado por categoria.
-* Responsive para todos los equipos.
 * Desarrollar, implementar y aprobar las pruebas unitarias.
 * Subirlo a github.
