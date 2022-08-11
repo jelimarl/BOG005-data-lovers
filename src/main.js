@@ -12,20 +12,44 @@ const filterSelect = document.getElementById("filterSelect");
 const sortSelect = document.getElementById("sortSelect");
 let spellsContainer = document.getElementById("spellsContainer");
 
+function cards(obj) {
+    let printSpells = "";
+
+    for (let spell of obj) {
+
+        if (obj.spell_type !== null) {
+            printSpells += `<article class="card">
+                <figure class="cardImage">
+                    <img class="spellsPic" src="https://www.ecipic.com/material/img/cultura-y-ocio/38673_1605530324_hechizos-de-harry-potter-2.jpg"> 
+                </figure>
+                <article class="cardText">
+                    <h4>${spell.name}</h4>
+                    <h4>Type: ${spell.spell_type}</h4>
+                </article>
+                </article>`;
+        }
+
+        else {
+            printSpells += `<article class= "card">
+            <figure class="cardImage">
+                <img class="spellsPic" src="https://www.ecipic.com/material/img/cultura-y-ocio/38673_1605530324_hechizos-de-harry-potter-2.jpg"> 
+            </figure>
+            <article class="cardText">
+                <h4>${spell.name}</h4>
+            </article>    
+            </article>`;
+        }
+    }
+
+    spellsContainer.innerHTML = printSpells;
+}
+
 function showSpells() {
 
     firstPage.style.display = "none";
     secondPage.style.display = "block";
-    let printSpells = "";
+    cards(spells);
 
-    for (let spell of spells) {
-
-        printSpells += `<article>
-        <h3>${spell.name}</h3>
-        <p></p>
-        </article>`;
-        spellsContainer.innerHTML = printSpells;
-    }
 }
 
 spellsButton.addEventListener("click", showSpells)
@@ -36,124 +60,54 @@ function showSpellsByType() {
     secondPage.style.display = "block";
     let filterValue = filterSelect.value;
     let arrSpellsFiltered;
-    let printSpells = "";
 
     switch (true) {
         case (filterValue === "Charm"):
             arrSpellsFiltered = filterSpells(spells, "Charm");
-
-            for (let spell of arrSpellsFiltered) {
-
-                printSpells += `<article>
-                <h3>${spell.name}</h3>
-                <p></p>
-                </article>`;
-                spellsContainer.innerHTML = printSpells;
-            };
+            cards(arrSpellsFiltered);
             break;
 
         case (filterValue === "Curse"):
             arrSpellsFiltered = filterSpells(spells, "Curse");
-
-            for (let spell of arrSpellsFiltered) {
-
-                printSpells += `<article>
-                <h3>${spell.name}</h3>
-                <p></p>
-                </article>`;
-                spellsContainer.innerHTML = printSpells;
-            };
+            cards(arrSpellsFiltered);
             break;
 
         case (filterValue === "Conjuration"):
             arrSpellsFiltered = filterSpells(spells, "Conjuration");
-
-            for (let spell of arrSpellsFiltered) {
-
-                printSpells += `<article>
-                <h3>${spell.name}</h3>
-                <p></p>
-                </article>`;
-                spellsContainer.innerHTML = printSpells;
-            };
+            cards(arrSpellsFiltered);
             break;
 
         case (filterValue === "Transfiguration"):
             arrSpellsFiltered = filterSpells(spells, "Transfiguration");
-
-            for (let spell of arrSpellsFiltered) {
-
-                printSpells += `<article>
-                <h3>${spell.name}</h3>
-                <p></p>
-                </article>`;
-                spellsContainer.innerHTML = printSpells;
-            };
+            cards(arrSpellsFiltered);
             break;
 
         case (filterValue === "Hex"):
             arrSpellsFiltered = filterSpells(spells, "Hex");
-
-            for (let spell of arrSpellsFiltered) {
-
-                printSpells += `<article>
-                <h3>${spell.name}</h3>
-                <p></p>
-                </article>`;
-                spellsContainer.innerHTML = printSpells;
-            };
+            cards(arrSpellsFiltered);
             break;
 
         case (filterValue === "Jinx"):
             arrSpellsFiltered = filterSpells(spells, "Jinx");
-
-            for (let spell of arrSpellsFiltered) {
-
-                printSpells += `<article>
-                <h3>${spell.name}</h3>
-                <p></p>
-                </article>`;
-                spellsContainer.innerHTML = printSpells;
-            };
+            cards(arrSpellsFiltered);
             break;
 
         case (filterValue === "Transportation"):
             arrSpellsFiltered = filterSpells(spells, "Transportation");
-
-            for (let spell of arrSpellsFiltered) {
-
-                printSpells += `<article>
-                <h3>${spell.name}</h3>
-                <p></p>
-                </article>`;
-                spellsContainer.innerHTML = printSpells;
-            };
+            cards(arrSpellsFiltered);
             break;
-
-
-
     }
 }
 
 filterSelect.addEventListener("click", showSpellsByType)
 
-//console.log(arrSpellsCharm[0]['name']); 
-
 function showSpellsSort() {
 
     const arrSpellsSort = sortSpells(spells);
-    let printSpells = "";
+
     firstPage.style.display = "none";
     secondPage.style.display = "block";
-
-    for (let spell of arrSpellsSort) {
-
-        printSpells += `<article>
-        <h3>${spell.name}</h3>
-        <p></p>
-        </article>`;
-        spellsContainer.innerHTML = printSpells
-    }
+    cards(arrSpellsSort);
 }
 
 //console.log(example, data);

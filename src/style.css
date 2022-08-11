@@ -215,8 +215,20 @@ i {
         text-decoration: overline underline;
     }
 
+    body #secondPage {
+        display: none;
+        background-image: url(https://t3.ftcdn.net/jpg/02/62/65/94/360_F_262659482_VlaoEev3591eBpMOROqIbc92G7iqc8nx.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 100%;
+    
+    }
+
     #secondPage h2 {
-        color: #eeebdd;
+        color: #1b1717;
         margin-top: 0;
         padding-top: 25%;
         text-align: center;
@@ -224,11 +236,53 @@ i {
     }
 
     #spellsContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         height: 500px;
         overflow: scroll;
         overflow-x: hidden;
-        color: #eeebdd;
-        margin-left: 7%;
+        color: #1b1717;
+        margin-left: 0px;
+        margin-top: 10%;
+        gap: 5%;
+    }
+
+    .card {
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        background: #eeebdd;
+        border: thick double;
+        border-color: #1b1717;
+    }
+
+    .cardImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .spellsPic {
+        height: 150px;
+        width: 200px;
+    }
+
+    .cardText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cardText h4 {
+        margin-bottom: 0;
+        margin-top: 6px;
     }
 
     #spellsButton {
@@ -244,10 +298,9 @@ i {
     }
 
     #filterSelect {
-        color: #630000;
+        color: #1b1717;
         font: bold;
         font-size: 15px;
-        border: #630000;
         width: 121px;
         height: 30px;
         background-color: #eeebdd;
@@ -260,10 +313,9 @@ i {
     }
 
     #sortSelect {
-        color: #630000;
+        color: #1b1717;
         font: bold;
         font-size: 15px;
-        border: #630000;
         width: 121px;
         height: 30px;
         background-color: #eeebdd;
