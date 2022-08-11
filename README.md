@@ -663,4 +663,5 @@ Para qué: Para conocerlos y estar preparados en caso de necesitarlos.
 * Selector de filtrado.
 * Filtrado por categoria.
 * Desarrollar, implementar y aprobar las pruebas unitarias.
+* Detalles en el responsive de celular.
 * Subirlo a github.
