@@ -1,4 +1,4 @@
-import { example } from './data.js';
+//import { example } from './data.js';
 
 import { filterSpells } from './data.js';
 
@@ -7,6 +7,8 @@ import { sortSpells } from './data.js';
 import data from './data/harrypotter/data.js';
 
 const spells = data.spells;
+const firstPage = document.getElementById('firstPage');
+const secondPage = document.getElementById('secondPage');
 const spellsButton = document.getElementById("spellsButton");
 const filterSelect = document.getElementById("filterSelect");
 const sortSelect = document.getElementById("sortSelect");
@@ -61,53 +63,25 @@ function showSpellsByType() {
     let filterValue = filterSelect.value;
     let arrSpellsFiltered;
 
-    switch (true) {
-        case (filterValue === "Charm"):
-            arrSpellsFiltered = filterSpells(spells, "Charm");
-            cards(arrSpellsFiltered);
-            break;
-
-        case (filterValue === "Curse"):
-            arrSpellsFiltered = filterSpells(spells, "Curse");
-            cards(arrSpellsFiltered);
-            break;
-
-        case (filterValue === "Conjuration"):
-            arrSpellsFiltered = filterSpells(spells, "Conjuration");
-            cards(arrSpellsFiltered);
-            break;
-
-        case (filterValue === "Transfiguration"):
-            arrSpellsFiltered = filterSpells(spells, "Transfiguration");
-            cards(arrSpellsFiltered);
-            break;
-
-        case (filterValue === "Hex"):
-            arrSpellsFiltered = filterSpells(spells, "Hex");
-            cards(arrSpellsFiltered);
-            break;
-
-        case (filterValue === "Jinx"):
-            arrSpellsFiltered = filterSpells(spells, "Jinx");
-            cards(arrSpellsFiltered);
-            break;
-
-        case (filterValue === "Transportation"):
-            arrSpellsFiltered = filterSpells(spells, "Transportation");
-            cards(arrSpellsFiltered);
-            break;
-    }
+    arrSpellsFiltered = filterSpells(spells, filterValue);
+    cards(arrSpellsFiltered);
 }
 
 filterSelect.addEventListener("click", showSpellsByType)
 
-function showSpellsSort() {
-
-    const arrSpellsSort = sortSpells(spells);
+function showSpellsSorted() {
 
     firstPage.style.display = "none";
     secondPage.style.display = "block";
-    cards(arrSpellsSort);
+    let sortValue = sortSelect.value;
+    let arrSpellsSorted;
+
+    arrSpellsSorted = sortSpells(spells, sortValue);
+    cards(arrSpellsSorted);
 }
 
+sortSelect.addEventListener("click", showSpellsSorted)
+
 //console.log(example, data);
+
+
