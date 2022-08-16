@@ -11,23 +11,13 @@ export const sortSpells = (obj, option) => {
 
   const compare = (a, b) => {
 
-    const nameA = a.name;
-    const nameB = b.name;
-
-    nameA.localeCompare(nameB);
+    if (a.name > b.name) {
+      return 1;
+    }
+    else {
+      return -1;
+    }
   }
-
-  //if (a.name > b.name) {
-  //return 1; a = pera b = kilo
-  //}
-  //if (a.name < b.name) {
-  //return -1;
-  //}
-  //return 0;
-  //}
-
-  //return obj.sort(compare);
-  //}
 
   if (option === "za") {
     return obj.sort(compare).reverse();
