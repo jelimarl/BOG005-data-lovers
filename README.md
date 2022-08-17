@@ -71,7 +71,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+- [x] **Uso de HTML semántico**
 
   <details><summary>Links</summary><p>
 
@@ -81,7 +81,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
+- [x] **Uso de selectores de CSS**
 
   <details><summary>Links</summary><p>
 
@@ -89,7 +89,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 </p></details>
 
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+- [x] **Modelo de caja (box model): borde, margen, padding**
 
   <details><summary>Links</summary><p>
 
@@ -100,7 +100,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
 </p></details>
 
-- [ ] **Uso de flexbox en CSS**
+- [x] **Uso de flexbox en CSS**
 
   <details><summary>Links</summary><p>
 
@@ -111,7 +111,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
+- [x] **Uso de selectores del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -120,7 +120,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 </p></details>
 
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- [x] **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
   <details><summary>Links</summary><p>
 
@@ -144,9 +144,9 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### JavaScript
 
-- [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
+- [x] **Diferenciar entre tipos de datos primitivos y no primitivos**
 
-- [ ] **Arrays (arreglos)**
+- [x] **Arrays (arreglos)**
 
   <details><summary>Links</summary><p>
 
@@ -159,14 +159,14 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 </p></details>
 
-- [ ] **Objetos (key, value)**
+- [x] **Objetos (key, value)**
 
   <details><summary>Links</summary><p>
 
   * [Objetos en JavaScript](https://curriculum.laboratoria.la/es/topics/javascript/05-objects/01-objects)
 </p></details>
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- [x] **Variables (declaración, asignación, ámbito)**
 
   <details><summary>Links</summary><p>
 
@@ -174,7 +174,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/02-variables)
 </p></details>
 
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- [x] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
   <details><summary>Links</summary><p>
 
@@ -182,7 +182,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
 </p></details>
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+- [x] **Uso de bucles/ciclos (while, for, for..of)**
 
   <details><summary>Links</summary><p>
 
@@ -190,7 +190,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
 </p></details>
 
-- [ ] **Funciones (params, args, return)**
+- [x] **Funciones (params, args, return)**
 
   <details><summary>Links</summary><p>
 
@@ -200,7 +200,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
 </p></details>
 
-- [ ] **Pruebas unitarias (unit tests)**
+- [x] **Pruebas unitarias (unit tests)**
 
   <details><summary>Links</summary><p>
 
@@ -252,7 +252,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### research
 
-- [ ] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
+- [x] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
 
   <details><summary>Links</summary><p>
 
@@ -602,14 +602,14 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 
 
-Proyecto 2
-DATA LOVERS HARRY POTTER
+## Proyecto 2
+### DATA LOVERS HARRY POTTER
 
 Esta web está diseñada para personas de 8 años en adelante, apasionadas por la saga de Harry Potter a los que les encanta tener toda la información a un click de distancia.
 
-Para esto nos enfocaremos en dividir este proyecto en historias de usuario, a continuación describiremos la primera historia:
+Para esto nos enfocaremos en dividir este proyecto en historias de usuario, a continuación describiremos cada una de ellas:
 
-Historia de Usuario 1: Función Visualizar
+**Historia de Usuario 1: Función Visualizar**
 
 Yo como: Apasionado por la saga de Harry Potter.
 
@@ -644,9 +644,7 @@ Prototipo de Alta fidelidad
 [Prototipo de alta fidelidad. Historia de usuario 1](https://www.figma.com/proto/rSdsLbnfZClPUnKm4XuVmR/Untitled?node-id=1%3A3&scaling=scale-down&page-id=0%3A1)
 
 
-
-
-Historia de Usuario 2: Función Filtrar 
+**Historia de Usuario 2: Función Filtrar**
 
 Yo como: Apasionado por la saga de Harry Potter.
 
@@ -665,3 +663,46 @@ Para qué: Para conocerlos y estar preparados en caso de necesitarlos.
 * Desarrollar, implementar y aprobar las pruebas unitarias.
 * Detalles en el responsive de celular.
 * Subirlo a github.
+
+
+
+**Historia de Usuario 3: Función Ordenar**
+
+Yo como: Apasionado por la saga de Harry Potter.
+
+Quiero: Poder ordenar los hechizos alfabéticamente.
+
+Para qué: para poder obtener un diccionario y ubicarlos de forma ágil.
+
+  Criterios de aceptación:
+
+* El usuario dará click al selector de ordenar para poder visualizar los hechizos ordenados alfabéticamente de forma ascendente y descendente. 
+
+  Criterios de terminado:
+
+* Selector de ordenar.
+* Funciones para ordenar.
+* Desarrollar, implementar y aprobar las pruebas unitarias.
+* Agregar funcionabilidad a los íconos de redes sociales.
+* Subirlo a github.
+
+**Historia de Usuario 4: Función Calcular.**
+
+YO COMO: Apasionado por la saga de Harry Potter
+
+QUIERO: Obtener el porcentaje de cada tipo de hechizo.
+
+PARA: Conocer esos detalles interesantes. 
+
+Criterios de aceptación:
+
+* El usuario al filtrar cada hechizo, podrá visualizar que porcentaje representa el tipo de hechizo seleccionado con respecto al total.
+
+Criterios de terminado:
+
+* Crear la función calcular.
+* Imprimir el resultado en pantalla (cuando el usuario filtre).
+* Crear el botón para volver (back-to-top).
+* Desarrollar, implementar y aprobar las pruebas unitarias.
+* Subirlo al github
+* Realizar el despliegue del github.
