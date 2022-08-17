@@ -1,5 +1,6 @@
 //import { example, anotherExample } from '../src/data.js';
 
+import { percentage } from '../src/data.js';
 import { filterSpells } from '../src/data.js';
 import { sortSpells } from '../src/data.js';
 
@@ -632,15 +633,15 @@ describe('filterSpells', () => {
     expect(typeof filterSpells).toBe('function');
   });
 
-  it('returns filterOutput', () => {
+  it('returns output', () => {
     expect(filterSpells(dataTest1, "Charm")).toStrictEqual(filterOutput1);
   });
 
-  it('returns filterOutput', () => {
+  it('returns output', () => {
     expect(filterSpells(dataTest1, "Jinx")).toStrictEqual(output2);
   });
 
-  it('returns filterOutput', () => {
+  it('returns output', () => {
     expect(filterSpells(dataTest2, "Jinx")).toStrictEqual(output2);
   });
 });
@@ -671,12 +672,16 @@ describe('sortSpells', () => {
   });
 });
 
-//describe('anotherExample', () => {
-  //it('is a function', () => {
-    //expect(typeof anotherExample).toBe('function');
-  //});
+describe('percentage', () => {
+  it('is a function', () => {
+    expect(typeof percentage).toBe('function');
+  });
 
-  //it('returns `anotherExample`', () => {
-    //expect(anotherExample()).toBe('OMG');
-  //});
-//});
+  it('returns output', () => {
+    expect(percentage(dataTest1, filterOutput1)).toStrictEqual(58);
+  });
+
+  it('returns output', () => {
+    expect(percentage(dataTest1, dataTest2)).toStrictEqual(0);
+  });
+});

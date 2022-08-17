@@ -36,3 +36,9 @@ export const filterSpells = (obj, type) => {
   return objNoNull.filter((obj) => obj.spell_type.includes(type));
 };
 
+export const percentage = (obj1, obj2) => {
+  let total = obj1.length;
+  let spellTypeNumber = obj2.length;
+  let spellPercentage = parseInt((spellTypeNumber * 100)/total, 10);
+return spellPercentage;
+};
