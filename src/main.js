@@ -4,7 +4,10 @@ import { filterSpells } from './data.js';
 
 import { sortSpells } from './data.js';
 
+import { percentage } from './data.js';
+
 import data from './data/harrypotter/data.js';
+
 
 const spells = data.spells;
 const firstPage = document.getElementById('firstPage');
@@ -12,7 +15,9 @@ const secondPage = document.getElementById('secondPage');
 const spellsButton = document.getElementById("spellsButton");
 const filterSelect = document.getElementById("filterSelect");
 const sortSelect = document.getElementById("sortSelect");
+const percentageMessage = document.getElementById("percentageMessage")
 let spellsContainer = document.getElementById("spellsContainer");
+let btn = document.getElementById("btn-back-to-top");
 
 function cards(obj) {
     let printSpells = "";
@@ -62,12 +67,23 @@ function showSpellsByType() {
     secondPage.style.display = "block";
     let filterValue = filterSelect.value;
     let arrSpellsFiltered;
+    let message;
+
 
     arrSpellsFiltered = filterSpells(spells, filterValue);
     cards(arrSpellsFiltered);
+
+    if (filterValue !== ""){
+        message = percentage(spells, arrSpellsFiltered)
+        percentageMessage.innerHTML = `This type of spell represents ${message}%`
+    }
+    else{
+        percentageMessage.innerHTML = ""
+    }
+    
 }
 
-filterSelect.addEventListener("click", showSpellsByType)
+filterSelect.addEventListener("change", showSpellsByType)
 
 function showSpellsSorted() {
 
@@ -85,9 +101,6 @@ sortSelect.addEventListener("click", showSpellsSorted)
 //console.log(example, data);
 
 //Botón back-to-top
-
-//Obtener el button
-let btn = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {

@@ -678,7 +678,7 @@ describe('percentage', () => {
   });
 
   it('returns output', () => {
-    expect(percentage(dataTest1, filterOutput1)).toStrictEqual(58);
+    expect(percentage(dataTest1, filterOutput1)).toStrictEqual(58.33);
   });
 
   it('returns output', () => {
