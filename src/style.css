@@ -166,6 +166,19 @@ body #secondPage {
     margin-top: 6px;
 }
 
+#btn-back-to-top{
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #630000;
+  }
+
+
+
 /* Estilando el footer */
 
 footer {
@@ -240,7 +253,7 @@ i {
     }
 
     .charactersPic {
-        padding-top: 30%;
+        padding-top: 42%;
         width: 60%;
         height: 60%;
     }
@@ -315,17 +328,6 @@ i {
     .logo {
         width: 250px;
         margin-top: 1%;
-    }
-
-    body #firstPage {
-        background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin-left: 0px;
-        margin-right: 0px;
-        overflow: scroll;
-        overflow: hidden;
     }
 
     .charactersPic {
