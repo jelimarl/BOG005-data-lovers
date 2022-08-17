@@ -1,6 +1,5 @@
-/*Responsive Desktop*/
+/*Responsive general*/
 
-/* Estilando el header*/
 body {
     margin: 0;
     height: 100vh;
@@ -13,12 +12,10 @@ header {
     position: fixed;
 }
 
-
 .logo {
     width: 400px;
     position: relative;
 }
-
 
 body #firstPage {
     background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
@@ -38,28 +35,32 @@ body #firstPage {
 
 #firstPage h2 {
     color: #eeebdd;
-    font-size: 50px;
+    font-size: 200%;
     text-decoration: overline underline;
 }
 
 body #secondPage {
     display: none;
-    background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-image: url(https://t3.ftcdn.net/jpg/02/62/65/94/360_F_262659482_VlaoEev3591eBpMOROqIbc92G7iqc8nx.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-left: 0px;
     margin-right: 0px;
     height: 100%;
-
 }
 
 #spellsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 500px;
     overflow: scroll;
     overflow-x: hidden;
-    color: #eeebdd;
-    margin-left: 10%;
+    color: #1b1717;
+    margin-left: 0px;
+    margin-top: 10%;
+    gap: 5%;
 }
 
 .charactersPic {
@@ -68,21 +69,32 @@ body #secondPage {
     height: 40%;
 }
 
+.aboutSpell p {
+    text-align: center;
+    color: #eeebdd;
+    background-color: rgba(27, 23, 23, 0.4);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 30px;
+}
 
 #spellsButton {
     color: #630000;
     font: bold;
-    font-size: 20px;
+    font-size: 25px;
     border: #630000;
     width: 110px;
     height: 40px;
     background-color: #eeebdd;
     margin-bottom: 10%;
     border-radius: 20px;
+    border: thick double;
 }
 
 #secondPage h2 {
-    color: #eeebdd;
+    color: #630000;
     margin-top: 0;
     padding-top: 17%;
     text-align: center;
@@ -101,7 +113,6 @@ body #secondPage {
     border-radius: 20px;
     margin-left: 10%;
     text-align: center;
-
 }
 
 #sortSelect {
@@ -116,14 +127,49 @@ body #secondPage {
     border-radius: 20px;
     margin-left: 10%;
     text-align: center;
+}
 
+.card {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background: #eeebdd;
+    border: thick double;
+    border-color: #1b1717;
+}
+
+.cardImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.spellsPic {
+    height: 150px;
+    width: 200px;
+}
+
+.cardText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardText h4 {
+    margin-bottom: 0;
+    margin-top: 6px;
 }
 
 /* Estilando el footer */
 
 footer {
     background-color: #1b1717;
-    /*position: absolute;*/
     width: 100%;
 }
 
@@ -164,24 +210,19 @@ i {
     margin-right: -20%;
 }
 
-
+.footerBar {
+    background-color: #eeebdd;
+    text-align: justify;
+    font-size: small;
+    color: #630000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 
 /*Responsive mobile*/
 
 @media (min-width: 320px) and (max-width: 767px) {
-
-    body {
-        width: 100%;
-        height: 100vh;
-    }
-
-    header {
-        background-color: #1b1717;
-        width: 100%;
-        margin-top: -10px;
-        position: fixed;
-    }
 
     .logo {
         width: 150px;
@@ -204,18 +245,7 @@ i {
         height: 60%;
     }
 
-    #firstPage h2 {
-        color: #eeebdd;
-        font-size: 30px;
-        /*background-color: #712b75;*/
-        margin-left: 15%;
-        margin-right: 15%;
-        border-radius: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-decoration: overline underline;
-    }
-
-    p {
+    .aboutSpell p {
         text-align: center;
         color: #eeebdd;
         background-color: rgba(27, 23, 23, 0.4);
@@ -223,18 +253,7 @@ i {
         padding-right: 10px;
         margin-left: 15px;
         margin-right: 15px;
-    }
-
-    body #secondPage {
-        display: none;
-        background-image: url(https://t3.ftcdn.net/jpg/02/62/65/94/360_F_262659482_VlaoEev3591eBpMOROqIbc92G7iqc8nx.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 100%;
-
+        font-size: 15px;
     }
 
     #secondPage h2 {
@@ -243,56 +262,6 @@ i {
         padding-top: 25%;
         text-align: center;
         font-size: 30px;
-    }
-
-    #spellsContainer {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        height: 500px;
-        overflow: scroll;
-        overflow-x: hidden;
-        color: #1b1717;
-        margin-left: 0px;
-        margin-top: 10%;
-        gap: 5%;
-    }
-
-    .card {
-        display: flex;
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 250px;
-        height: 250px;
-        background: #eeebdd;
-        border: thick double;
-        border-color: #1b1717;
-    }
-
-    .cardImage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-
-    .spellsPic {
-        height: 150px;
-        width: 200px;
-    }
-
-    .cardText {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .cardText h4 {
-        margin-bottom: 0;
-        margin-top: 6px;
     }
 
     #spellsButton {
@@ -305,6 +274,7 @@ i {
         background-color: #eeebdd;
         margin-bottom: 10%;
         border-radius: 20px;
+        border: thick double;
     }
 
     #filterSelect {
@@ -319,7 +289,6 @@ i {
         border-radius: 20px;
         margin-left: 33%;
         text-align: center;
-
     }
 
     #sortSelect {
@@ -332,79 +301,8 @@ i {
         border-radius: 20px;
         margin-left: 33%;
         text-align: center;
-
         margin-bottom: 2%;
         margin-top: 3%;
-
-    }
-
-   /* .sortBar {
-
-        height: 100px;
-        width: 55px;
-        background-color: rgba(27, 23, 23, 0.6);
-        position: fixed;
-        bottom: 170px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        z-index: 5;
-
-    }*/
-
-    footer {
-        background-color: #1b1717;
-        position: absolute;
-        width: 100%;
-        height: 20%;
-    }
-
-    footer h3 {
-        color: beige;
-        text-align: center;
-        margin: 0;
-        text-decoration: underline;
-        padding-top: 1%;
-    }
-
-    .media {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-left: 0%;
-    }
-
-
-    footer ul li {
-        color: beige;
-        list-style: none;
-        margin-bottom: 10px;
-        text-align: center;
-        margin-top: 5px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    ul {
-        margin: 0;
-    }
-
-    i {
-        color: beige;
-        font-size: 30px;
-        display: flex;
-        margin-top: 15%;
-        margin-right: -20%;
-    }
-    
-    .footerBar{
-        background-color: #eeebdd;
-        text-align: justify;
-        font-size: small;
-        color:#630000;
-        margin-bottom: 0;
-        padding-bottom: 0;
     }
 
 }
@@ -413,24 +311,11 @@ i {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    body {
-        margin: 0;
-        height: 100vh;
-    }
-
-    header {
-        background-color: rgb(63, 47, 47);
-        width: 100%;
-        margin-top: -10px;
-        position: fixed;
-    }
-
 
     .logo {
         width: 250px;
         margin-top: 1%;
     }
-
 
     body #firstPage {
         background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
@@ -443,113 +328,10 @@ i {
         overflow: hidden;
     }
 
-    #firstPage {
-        display: flex;
-        justify-items: center;
-        flex-direction: column;
-        display: block;
-    }
-
-    #firstPage h2 {
-        color: #eeebdd;
-        font-size: 50px;
-    }
-
-    body #secondPage {
-        display: none;
-        background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=MnwxM[%E2%80%A6]G90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 100%;
-    }
-
-    #spellsContainer {
-        height: 500px;
-        overflow: scroll;
-        overflow-x: hidden;
-        color: #eeebdd;
-        margin-left: 10%;
-    }
-
     .charactersPic {
         padding-top: 20%;
         width: 40%;
         height: 40%;
     }
-
-
-    #spellsButton {
-        color: #630000;
-        font: bold;
-        font-size: 20px;
-        border: #630000;
-        width: 110px;
-        height: 40px;
-        background-color: #eeebdd;
-        margin-bottom: 10%;
-        border-radius: 20px;
-    }
-
-    #secondPage h2 {
-        color: #eeebdd;
-        margin-top: 0;
-        padding-top: 18%;
-        text-align: center;
-        font-size: 30px;
-    }
-
-
-    /* Estilando el footer */
-
-    footer {
-        background-color: rgb(63, 47, 47);
-        /*position: absolute;*/
-        width: 100%;
-    }
-
-
-
-    footer h3 {
-        color: beige;
-        text-align: center;
-        margin: 0;
-        text-decoration: underline;
-        padding-top: 1%;
-    }
-
-    .media {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-left: 0%;
-    }
-
-    footer ul li {
-        color: beige;
-        list-style: none;
-        margin-bottom: 10px;
-        text-align: center;
-        margin-top: 5px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    ul {
-        margin: 0;
-    }
-
-    i {
-        color: beige;
-        font-size: 30px;
-        display: flex;
-        margin-top: 15%;
-        margin-right: -20%;
-    }
-
-
-
 
 }
