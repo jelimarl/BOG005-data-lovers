@@ -1,16 +1,15 @@
-//import { example } from './data.js';
 
-import { filterSpells } from './data.js';
+
+import { filterSpells } from './data.js'; //Importamos las funciones.
 
 import { sortSpells } from './data.js';
 
 import { percentage } from './data.js';
 
-import data from './data/harrypotter/data.js';
+import data from './data/harrypotter/data.js'; //Importamos la data.
 
-
-const spells = data.spells;
-const firstPage = document.getElementById('firstPage');
+const spells = data.spells;  //Declaramos una constante para la data
+const firstPage = document.getElementById('firstPage'); //Traemos elementos del DOM 
 const secondPage = document.getElementById('secondPage');
 const spellsButton = document.getElementById("spellsButton");
 const filterSelect = document.getElementById("filterSelect");
@@ -19,6 +18,7 @@ const percentageMessage = document.getElementById("percentageMessage")
 let spellsContainer = document.getElementById("spellsContainer");
 let btn = document.getElementById("btn-back-to-top");
 
+//Funcion para imprimir las tarjetas con la data.
 function cards(obj) {
     let printSpells = "";
 
@@ -48,9 +48,13 @@ function cards(obj) {
         }
     }
 
+    //Se introducen las tarjetas en el container.
     spellsContainer.innerHTML = printSpells;
 }
 
+spellsButton.addEventListener("click", showSpells)
+
+//Mostramos la data en la página dos.
 function showSpells() {
 
     firstPage.style.display = "none";
@@ -58,11 +62,11 @@ function showSpells() {
     document.body.scroll = 0;
     document.documentElement.scrollTop = 0;
     cards(spells);
-
 }
 
-spellsButton.addEventListener("click", showSpells)
+filterSelect.addEventListener("change", showSpellsByType)
 
+//Mostramos la data filtrada y el mensaje de porcentaje.
 function showSpellsByType() {
 
     firstPage.style.display = "none";
@@ -70,7 +74,6 @@ function showSpellsByType() {
     let filterValue = filterSelect.value;
     let arrSpellsFiltered;
     let message;
-
 
     arrSpellsFiltered = filterSpells(spells, filterValue);
     cards(arrSpellsFiltered);
@@ -85,8 +88,9 @@ function showSpellsByType() {
     }  
 }
 
-filterSelect.addEventListener("change", showSpellsByType)
+sortSelect.addEventListener("click", showSpellsSorted)
 
+//Mostramos la data ordenada A-Z y Z-A
 function showSpellsSorted() {
 
     firstPage.style.display = "none";
@@ -98,12 +102,8 @@ function showSpellsSorted() {
     cards(arrSpellsSorted);
 }
 
-sortSelect.addEventListener("click", showSpellsSorted)
-
-//console.log(example, data);
-
 //Botón back-to-top
-//Cuando el usuario se desplace 20 px hacia abajo desde la parte superior del documento, se muestra el botón
+//Cuando el usuario se desplace 20px hacia abajo desde la parte superior del documento, se muestra el botón
 window.onscroll = function () {
   scrollFunction();
 };
