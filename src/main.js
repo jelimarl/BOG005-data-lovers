@@ -55,6 +55,8 @@ function showSpells() {
 
     firstPage.style.display = "none";
     secondPage.style.display = "block";
+    document.body.scroll = 0;
+    document.documentElement.scrollTop = 0;
     cards(spells);
 
 }
@@ -75,12 +77,12 @@ function showSpellsByType() {
 
     if (filterValue !== ""){
         message = percentage(spells, arrSpellsFiltered)
-        percentageMessage.innerHTML = `This type of spell represents ${message}%`
+        percentageMessage.innerHTML = `<article class="cardMessage">
+        ${filterValue} spells represent ${message}% </article>`
     }
     else{
         percentageMessage.innerHTML = ""
-    }
-    
+    }  
 }
 
 filterSelect.addEventListener("change", showSpellsByType)
@@ -101,8 +103,7 @@ sortSelect.addEventListener("click", showSpellsSorted)
 //console.log(example, data);
 
 //Botón back-to-top
-
-// When the user scrolls down 20px from the top of the document, show the button
+//Cuando el usuario se desplace 20 px hacia abajo desde la parte superior del documento, se muestra el botón
 window.onscroll = function () {
   scrollFunction();
 };
@@ -116,11 +117,4 @@ function scrollFunction() {
   } else {
     btn.style.display = "none";
   }
-}
-// When the user clicks on the button, scroll to the top of the document
-btn.addEventListener("click", backToTop);
-
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 }
