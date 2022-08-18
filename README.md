@@ -1,4 +1,6 @@
-# Data Lovers
+# Proyecto 2
+
+## DATA LOVERS - HARRY POTTER
 
 ## Índice
 
@@ -631,17 +633,21 @@ Para qué: Para poder conocer cada uno de ellos.
 
 Prototipo de baja fidelidad
 
-![Primer prototipo Harry Potter](./src/img/PrototipoFiltrar.jpg)
+![Primer prototipo Harry Potter](./src/img/Prototipo.jpg)
 
-FEEDBACK
+**FEEDBACK**
 
-Luego de recibir el feedback, realizamos los ajustes al prototipo de baja fidelidad, donde colocamos los botones para acceder a los hechizos en la primera vista, en la segunda vista los hechizos a elegir :
+Luego de recibir el feedback, realizamos los ajustes al prototipo de baja fidelidad, donde colocamos el botón para acceder a los hechizos en la primera vista y en la segunda vista los hechizos a elegir.
+
+A su vez, nos sugirieron agregar un back-to-top para regresar de formal ágil a los selectores y que el selector de ordenar, mostrara de manera más clara las opciones, donde colocamos un guión entre las letras A y Z para mejorar la visual.
+
+A continuación podrar acceder a los prototipos realizados:
 
 ![Prototipo de baja fidelidad 1](./src/img/PrototipoFiltrar1.jpg)
 
 Prototipo de Alta fidelidad
 
-[Prototipo de alta fidelidad. Historia de usuario 1](https://www.figma.com/proto/rSdsLbnfZClPUnKm4XuVmR/Untitled?node-id=1%3A3&scaling=scale-down&page-id=0%3A1)
+[Prototipo de alta fidelidad.](https://www.figma.com/proto/rSdsLbnfZClPUnKm4XuVmR/Untitled?node-id=1%3A3&scaling=scale-down&page-id=0%3A1)
 
 
 **Historia de Usuario 2: Función Filtrar**

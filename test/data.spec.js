@@ -1,9 +1,9 @@
-//import { example, anotherExample } from '../src/data.js';
-
+//Se importan las funciones.
 import { percentage } from '../src/data.js';
 import { filterSpells } from '../src/data.js';
 import { sortSpells } from '../src/data.js';
 
+//Se elige la data para los test.
 const data1 = [
   {
     "id": 1,
@@ -139,6 +139,7 @@ const data1 = [
   }
 ];
 
+//Data ordenada de Z-A
 const data2 = [
   {
     "id": 189,
@@ -274,6 +275,7 @@ const data2 = [
   }
 ];
 
+//Data filtrada respecto a "Charm"
 const filterOutput1 = [
   {
     "id": 1,
@@ -354,6 +356,7 @@ const filterOutput1 = [
   }
 ];
 
+//Se crean las funciones que realizan el test
 describe('filterSpells', () => {
   it('is a function', () => {
     expect(typeof filterSpells).toBe('function');
