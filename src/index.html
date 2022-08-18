@@ -45,13 +45,15 @@
 
       <section id="secondPage">
         <h2>SPELLS</h2>
+      
 
         <article id="percentageMessage">
           <p></p>
         </article>
 
+        <div class="sortBar">
         <select name="filter" id="filterSelect">
-          <option value="">Filter by type</option>
+          <option value="">Filter</option>
           <option value="Charm">Charm</option>
           <option value="Curse">Curse</option>
           <option value="Conjuration">Conjuration</option>
@@ -61,11 +63,11 @@
           <option value="Transportation">Transportation</option>
         </select>
 
-        <div class="sortBar">
+        
           <select name="sort" id="sortSelect">
             <option value="">Sort</option>
-            <option value="az">AZ</option>
-            <option value="za">ZA</option>
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
           </select>
         </div>
 
@@ -73,10 +75,13 @@
 
         </div>
 
-        <button type="button" class="btn-back" id="btn-back-to-top">
+      
+        <div id="btn-back-to-top">
+        <a href="#secondPage">
+          <i class="fa-solid fa-circle-chevron-up"></i></a>
 
-          <i class="fa-duotone fa-circle-arrow-up"></i>
-        </button>
+        </div>
+    
 
       </section>
     </main>
