@@ -14,9 +14,10 @@ const secondPage = document.getElementById('secondPage');
 const spellsButton = document.getElementById("spellsButton");
 const filterSelect = document.getElementById("filterSelect");
 const sortSelect = document.getElementById("sortSelect");
-const percentageMessage = document.getElementById("percentageMessage")
+const percentageMessage = document.getElementById("percentageMessage");
 let spellsContainer = document.getElementById("spellsContainer");
-let btn = document.getElementById("btn-back-to-top");
+const btn = document.getElementById("btn-back-to-top");
+const btnLogo = document.getElementById("btnLogo");
 
 //Funcion para imprimir las tarjetas con la data.
 function cards(obj) {
@@ -88,7 +89,7 @@ function showSpellsByType() {
     }  
 }
 
-sortSelect.addEventListener("click", showSpellsSorted)
+sortSelect.addEventListener("change", showSpellsSorted)
 
 //Mostramos la data ordenada A-Z y Z-A
 function showSpellsSorted() {
@@ -118,3 +119,10 @@ function scrollFunction() {
     btn.style.display = "none";
   }
 }
+
+//Para volver a la página inicial
+
+btnLogo.addEventListener("click", ()=>{
+    secondPage.style.display = "none";
+    firstPage.style.display = "block";
+})

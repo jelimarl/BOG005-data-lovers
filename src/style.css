@@ -17,6 +17,11 @@ header {
     position: relative;
 }
 
+#btnLogo {
+    background-color: #1b1717;
+    border-color: #1b1717;
+}
+
 body #firstPage {
     background-image: url(https://img.freepik.com/fotos-premium/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
     background-repeat: no-repeat;
