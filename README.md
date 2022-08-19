@@ -2,7 +2,7 @@
 
 ## DATA LOVERS - HARRY POTTER
 
-https://soreyc.github.io/BOG005-data-lovers/src
+https://jelimarl.github.io/BOG005-data-lovers/src/
 
 ## Índice
 
