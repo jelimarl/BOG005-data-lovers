@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Harry Potter fan page. Data Lovers">
+  <title>Data Lovers Harry Potter</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3ca27637b4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <center>
+        <a href="../index.html">
+        <img src="./img/LogoHeader.png" class="logo">
+      </a>
+      </center>
+    </header>
+
+    <main>
+
+      <section id="firstPage">
+        <a href="index.html"></a>
+        <center>
+          <div>
+            <img src="./img/PersonajesPrincipales.png" class="charactersPic">
+          </div>
+          <div>
+            <h2>DISCOVER</h2>
+          </div>
+
+          <article class="aboutSpell">
+            <p>Spells are taught at Hogwarts, but it is not allowed to use them out of the school until 7º grade.
+              <br>In order to use them you will need a wand. Ollivander who is the best wandmaker on Diagon Alley
+              affirms «the wand chooses the wizard», then we can not help you so much with this matter. But we can
+              remind you all the spells you find in this saga written by J.K Rowling.
+            </p>
+          </article>
+
+          <div>
+            <input type="button" id="spellsButton" value="Spells">
+          </div>
+        </center>
+      </section>
+
+      <section id="secondPage">
+        <h2>SPELLS</h2>
+        <article id="percentageMessage">
+          
+        </article>
+
+        <div class="sortBar">
+        <select name="filter" id="filterSelect">
+          <option value="">Filter</option>
+          <option value="Charm">Charm</option>
+          <option value="Curse">Curse</option>
+          <option value="Conjuration">Conjuration</option>
+          <option value="Transfiguration">Transfiguration</option>
+          <option value="Hex">Hex</option>
+          <option value="Jinx">Jinx</option>
+          <option value="Transportation">Transportation</option>
+        </select>
+
+        
+          <select name="sort" id="sortSelect">
+            <option value="">Sort</option>
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
+          </select>
+        </div>
+
+        <div id="spellsContainer">
+
+        </div>
+
+      
+        <div id="btn-back-to-top">
+        <a href="#secondPage">
+          <i class="fa-solid fa-circle-chevron-up"></i></a>
+
+        </div>
+    
+
+      </section>
+    </main>
+
+    <footer>
+
+      <h3>Social media</h3>
+
+      <ul class="media">
+        <div>
+          <li>
+            <a href="https://www.facebook.com/groups/harrypotteryanimalesfantasticos/?ref=share">
+              <i class="fa-brands fa-facebook-square"></i>
+            </a>
+          </li>
+        </div>
+        <div>
+          <li>
+            <a href="https://instagram.com/harrypotterfilm?igshid=YmMyMTA2M2Y=">
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+          </li>
+        </div>
+        <div>
+          <li>
+            <a href="https://web.whatsapp.com/">
+              <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+          </li>
+        </div>
+      </ul>
+      <div class="footerBar">
+        &copy; Derechos Reservados - Jelimar León and Sorey Cortés - 2022
+      </div>
+    </footer>
+
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
