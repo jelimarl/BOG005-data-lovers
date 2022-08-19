@@ -326,7 +326,7 @@ i {
     #filterSelect {
         color: #630000;
         font: bold;
-        font-size: 12px;
+        font-size: 15px;
         width: 115px;
         height: 30px;
         background-color: #eeebdd;
@@ -343,7 +343,7 @@ i {
         padding-bottom: 3%;
         background-color: #630000;
         opacity: 0.7;
-        font-size: 15px;
+        font-size: 17px;
         font: bold;
         color: #eeebdd;
         padding-top: 3%;
@@ -355,7 +355,7 @@ i {
     #sortSelect {
         color: #630000;
         font: bold;
-        font-size: 12px;
+        font-size: 15px;
         width: 115px;
         height: 30px;
         background-color: #eeebdd;
