@@ -148,7 +148,7 @@ Luego de recibir el feedback, realizamos los ajustes al prototipo de baja fideli
 
 A su vez nos sugirieron: agregar un botón back-to-top para regresar de formal ágil a los selectores, y que el selector de ordenar mostrara de manera más clara las opciones. Para satisfacer esa última petición, colocamos un guión entre las letras A y Z que mejoró la visual.
 
-## 8. Objetivos de aprendizaje
+## 7. Objetivos de aprendizaje
 
 ### HTML
 
