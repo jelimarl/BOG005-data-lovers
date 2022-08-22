@@ -16,7 +16,7 @@ const filterSelect = document.getElementById("filterSelect");
 const sortSelect = document.getElementById("sortSelect");
 const percentageMessage = document.getElementById("percentageMessage");
 let spellsContainer = document.getElementById("spellsContainer");
-const btn = document.getElementById("btn-back-to-top");
+const btn = document.getElementById("btnBackToTop");
 const btnLogo = document.getElementById("btnLogo");
 
 //Funcion para imprimir las tarjetas con la data.
@@ -103,7 +103,7 @@ function showSpellsSorted() {
     cards(arrSpellsSorted);
 }
 
-//Botón back-to-top
+//Botón back to top
 //Cuando el usuario se desplace 20px hacia abajo desde la parte superior del documento, se muestra el botón
 window.onscroll = function () {
   scrollFunction();
