@@ -196,7 +196,7 @@ body #secondPage {
     margin-top: 6px;
 }
 
-#btn-back-to-top {
+#btnBackToTop {
     position: fixed;
     bottom: 110px;
     right: 20px;
@@ -204,7 +204,7 @@ body #secondPage {
     cursor: pointer;
 }
 
-#btn-back-to-top i {
+#btnBackToTop i {
     text-decoration: none;
     color: #630000;
     font-size: 50px;
@@ -212,7 +212,7 @@ body #secondPage {
 
 }
 
-#btn-back-to-top:active {
+#btnBackToTop:active {
     transform: scale(0.9);
 }
 
