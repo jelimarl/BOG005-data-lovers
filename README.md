@@ -2,7 +2,7 @@
 
 ## DATA LOVERS - HARRY POTTER
 
-https://soreyc.github.io/BOG005-data-lovers/src
+https://soreyc.github.io/BOG005-data-lovers-J-S/src
 
 ## Índice
 
@@ -410,6 +410,3 @@ A su vez nos sugirieron: agregar un botón back-to-top para regresar de formal �
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
-
-
-Esto es una prueba
